@@ -1,3 +1,0 @@
-/home/vova/Projects/ip_calculator/CMakeFiles/rebuild_cache.dir
-/home/vova/Projects/ip_calculator/CMakeFiles/ip_calculator.dir
-/home/vova/Projects/ip_calculator/CMakeFiles/edit_cache.dir
