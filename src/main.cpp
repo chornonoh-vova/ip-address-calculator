@@ -11,7 +11,10 @@
 
 int main(int argc, char** argv)
 {
-  if (strcmp(argv[1], "--help") == 0) {
+  if (argc == 1) {
+    std::cout << "type ip-calculator --help to get help" << std::endl;
+    return 1;
+  } else if (strcmp(argv[1], "--help") == 0) {
     std::cout << "type ip-calculator --all <ip>/<prefix> to compute all network boundaries" << std::endl;
     std::cout << "type ip-calculator --net <ip>/<prefix> to compute only network address" << std::endl;
     std::cout << "type ip-calculator --mask <ip>/<prefix> to compute only network mask" << std::endl;
@@ -92,9 +95,6 @@ int main(int argc, char** argv)
       std::cerr << "valid ip-prefix string: 192.168.1.1/23" << std::endl;
       return 2;
     }
-  } else {
-    std::cout << "type ip-calculator --help to get help" << std::endl;
-    return 1;
   }
   return 0;
 }
